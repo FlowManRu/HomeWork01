@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TheNetwork">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="182dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/network" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="475dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Как и все мы, Анжела Беннет живет в век информации. Все аспекты ее существования переведены в цифры и занесены в различные компьютерные базы данных: личный идентификационный номер, номер банковского счета, номер страхового свидетельства, номер водительского удостоверения, сведения об отсутствии судимости. Работа Анжелы тоже связана с компьютерами - она программист."
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="477dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Существование Анжелы Беннет полностью компьютеризованно. Она не придает этому значения, но однажды ее личность стирают! Гуляя по компьютерной сети, Анжела случайно перебегает дорогу преторианцам. Преторианцами называют себя члены организованной группы хакеров, на счету которых взломы правительственных систем безопасности, биржевые крахи, авиакатастрофы и убийства, совершенные с использованием только одного оружия - всемирной сети интернет. Анжела становится следующей жертвой в списке хакеров."
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
