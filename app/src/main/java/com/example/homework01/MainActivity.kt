@@ -49,6 +49,22 @@ class MainActivity : AppCompatActivity() {
         startActivity(button4)
     }
 
+    fun clickImplicit(view: View) {
+        val textMessage = "Our message"
+        val sendIntent = Intent()
+        sendIntent.action = Intent.ACTION_SEND
+        sendIntent.putExtra(Intent.EXTRA_TEXT, textMessage)
+        sendIntent.type = "text/plain"
+        val title = resources.getString(R.string.chooser_title)
+        // Создаем Intent для отображения диалога выбора.
+        val chooser = Intent.createChooser(sendIntent, title)
+        // Проверяем, что intent может быть успешно обработан
+        sendIntent.resolveActivity(packageManager)?.let {
+            startActivity(chooser)
+        }
+    }
+
+
 }
 
 
